@@ -18,6 +18,16 @@ vim.g.maplocalleader = " "
 --   term_mode = "t",
 --   command_mode = "c",
 
+-- Ph keymaps
+-- ESC alternatives
+--lvim.keys.normal_mode["me"] = ":q<cr>"
+--lvim.keys.normal_mode["ms"] = ":w<cr>"
+--lvim.keys.normal_mode["mx"] = ":x<cr>"
+
+keymap("n", "me", ":q<cr>", opts)
+--keymap("n", "ms", ":w<cr>", opts)
+--keymap("n", "mx", ":x<cr>", opts)
+
 -- Normal --
 -- Better window navigation
 keymap("n", "<C-h>", "<C-w>h", opts)
@@ -42,6 +52,7 @@ keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 -- Insert --
 -- Press jk fast to enter
 keymap("i", "jk", "<ESC>", opts)
+keymap("i", "kj", "<ESC>", opts)
 
 -- Visual --
 -- Stay in indent mode

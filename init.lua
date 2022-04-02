@@ -48,4 +48,4 @@ require "user.gps"
 require "user.illuminate"
 require "user.dap"
 require "user.lir"
-vim.opt.laststatus = 3
+--vim.opt.laststatus = 3
